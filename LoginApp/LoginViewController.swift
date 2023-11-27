@@ -7,14 +7,13 @@
 
 import UIKit
 
-final class MainViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     // MARK: Outlets
-    
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // MARK: User login and password
+    // MARK: Preinstalled user login and password
     private let userLogin = "User"
     private let userPass = "1111"
     
@@ -24,13 +23,22 @@ final class MainViewController: UIViewController {
         welcomeVC?.userNameValue = "\(userNameTextField.text ?? "")!"
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let tapGesture = UITapGestureRecognizer(
-            target: view,
-            action: #selector(UIView.endEditing)
-        )
-         view.addGestureRecognizer(tapGesture)
+    // MARK: Check login & pass
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard userNameTextField.text == userLogin, passwordTextField.text == userPass else {
+            showAlert(
+                withTitle: "Login or passowrd is incorrect!",
+                andMessage: "Please, enter correct login and password"
+            )
+            return false
+        }
+        return true
+    }
+    
+    // MARK: Setup keyboard hide
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
     
     //MARK: Setup alert
@@ -54,15 +62,7 @@ final class MainViewController: UIViewController {
         passwordTextField.text = ""
     }
     
-    // MARK: Action buttons
-    @IBAction func loginButtonAction(_ sender: UIButton) {
-        if passwordTextField.text != userPass || userNameTextField.text != userLogin {
-            showAlert(
-                withTitle: "Login or passowrd is incorrect!",
-                andMessage: "Please, enter correct login and password"
-            )
-        }
-    }
+    // MARK: Action buttons show alerts
     
     @IBAction func forgotUserAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is User🤔")
@@ -74,4 +74,3 @@ final class MainViewController: UIViewController {
     
     
 }
-

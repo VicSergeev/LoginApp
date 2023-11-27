@@ -19,9 +19,5 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         welcomeUserNameLabel.text = userNameValue
     }
-
-    
-    @IBAction func logoutButtonTapped(_ sender: UIButton) {
-    }
     
 }
