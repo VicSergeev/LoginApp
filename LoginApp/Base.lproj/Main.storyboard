@@ -112,15 +112,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVI-eN-PwH">
-                                <rect key="frame" x="162.66666666666666" y="188" width="50" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-un-4YT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-un-4YT">
                                 <rect key="frame" x="142" y="613" width="91" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -130,6 +123,12 @@
                                     <segue destination="9Un-K0-r53" kind="unwind" unwindAction="unwindFor:" id="xwe-XN-55n"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVI-eN-PwH">
+                                <rect key="frame" x="162.66666666666666" y="188" width="50" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F4z-U8-NXc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -137,10 +136,12 @@
                             <constraint firstItem="mVI-eN-PwH" firstAttribute="top" secondItem="yac-lS-tTu" secondAttribute="bottom" constant="19" id="2GE-3C-5Ha"/>
                             <constraint firstItem="mVI-eN-PwH" firstAttribute="centerX" secondItem="1Ru-Sz-s2m" secondAttribute="centerX" id="CER-oj-cDW"/>
                             <constraint firstItem="yac-lS-tTu" firstAttribute="centerX" secondItem="1Ru-Sz-s2m" secondAttribute="centerX" id="CzG-3u-KBf"/>
+                            <constraint firstItem="F4z-U8-NXc" firstAttribute="bottom" secondItem="Fgc-un-4YT" secondAttribute="bottom" constant="161" id="GIF-qj-i88"/>
                             <constraint firstAttribute="trailing" secondItem="XR8-Ao-4yg" secondAttribute="trailing" id="haV-ZY-HuW"/>
                             <constraint firstItem="XR8-Ao-4yg" firstAttribute="top" secondItem="1Ru-Sz-s2m" secondAttribute="top" id="kLv-gN-hCY"/>
                             <constraint firstItem="yac-lS-tTu" firstAttribute="top" secondItem="F4z-U8-NXc" secondAttribute="top" constant="119" id="lw9-oV-ylh"/>
                             <constraint firstItem="XR8-Ao-4yg" firstAttribute="leading" secondItem="1Ru-Sz-s2m" secondAttribute="leading" id="nCA-d9-OnG"/>
+                            <constraint firstItem="Fgc-un-4YT" firstAttribute="centerX" secondItem="mVI-eN-PwH" secondAttribute="centerX" id="txH-uX-LH1"/>
                             <constraint firstAttribute="bottom" secondItem="XR8-Ao-4yg" secondAttribute="bottom" id="vM5-by-myw"/>
                         </constraints>
                     </view>
