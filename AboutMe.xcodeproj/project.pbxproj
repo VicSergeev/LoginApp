@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18E338F02B15162600ED4FD4 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E338F02B15162600ED4FD4 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E338F32B15162600ED4FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E338F52B15162600ED4FD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18E338F72B15162600ED4FD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		18E338F12B15162600ED4FD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18E338F02B15162600ED4FD4 /* LoginApp.app */,
+				18E338F02B15162600ED4FD4 /* AboutMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18E338EF2B15162600ED4FD4 /* LoginApp */ = {
+		18E338EF2B15162600ED4FD4 /* AboutMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18E339042B15162700ED4FD4 /* Build configuration list for PBXNativeTarget "LoginApp" */;
+			buildConfigurationList = 18E339042B15162700ED4FD4 /* Build configuration list for PBXNativeTarget "AboutMe" */;
 			buildPhases = (
 				18E338EC2B15162600ED4FD4 /* Sources */,
 				18E338ED2B15162600ED4FD4 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = LoginApp;
+			name = AboutMe;
 			productName = LoginApp;
-			productReference = 18E338F02B15162600ED4FD4 /* LoginApp.app */;
+			productReference = 18E338F02B15162600ED4FD4 /* AboutMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18E338EB2B15162600ED4FD4 /* Build configuration list for PBXProject "LoginApp" */;
+			buildConfigurationList = 18E338EB2B15162600ED4FD4 /* Build configuration list for PBXProject "AboutMe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18E338EF2B15162600ED4FD4 /* LoginApp */,
+				18E338EF2B15162600ED4FD4 /* AboutMe */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18E338EB2B15162600ED4FD4 /* Build configuration list for PBXProject "LoginApp" */ = {
+		18E338EB2B15162600ED4FD4 /* Build configuration list for PBXProject "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18E339022B15162700ED4FD4 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18E339042B15162700ED4FD4 /* Build configuration list for PBXNativeTarget "LoginApp" */ = {
+		18E339042B15162700ED4FD4 /* Build configuration list for PBXNativeTarget "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18E339052B15162700ED4FD4 /* Debug */,
